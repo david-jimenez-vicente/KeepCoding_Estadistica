@@ -6,7 +6,8 @@
 · Este README.md, con la descripción del enunciado y la resolución de la práctica.  
 · "0-PracticaFinal.qmd": R Quarto Notebook con la resolución del ejercicio usando R.  
 · "airbnb.csv": Dataset de AirBnB usado para la práctica.  
-## Repository content
+
+## Repository content  
 · This README.MD containing the project description.  
 · "0-PracticaFinal.qmd": R Quarto Notebook with the solution using R.  
 · "airbnb.csv": AirBnB dataset used in this practice.  
