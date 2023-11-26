@@ -380,20 +380,19 @@ top_caros_mas_de_100_completo
 ```{r}
 # Seguiré el mismo método de dibujo que en las ateriores gráficas:
 # -------Para 5 lienzos distintos: ----------
-for (i in a_dibujar){
-  temp <- airbnb_entire[airbnb_entire$Barrio == i,]
-  print(ggplot() + geom_density(data=temp, aes(x=MetrosCuadrados, colour="Barrio"), na.rm=T) + labs(title = "Gráficas unitarias"))
+for (Barrio in a_dibujar){
+  temp <- airbnb_entire[airbnb_entire$Barrio == Barrio,]
+  print(ggplot() + geom_density(data=temp, aes(x=MetrosCuadrados, colour=Barrio), na.rm=T) + labs(title = "Gráficas unitarias"))
 }
 
 # -------Para las 5 en la misma gráfica: ----------
 g <- ggplot() + labs(title = "Gráfica combinada")
-for (i in a_dibujar){
+for (Barrio in a_dibujar){
   temp <- airbnb_entire[airbnb_entire$Barrio == Barrio,]
   g <- g + geom_density(data=temp, aes(x=MetrosCuadrados, colour=Barrio), na.rm=T)
 }
 print(g)
 ```
-
 
 
 ------------------------------------------------------------------------
